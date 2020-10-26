@@ -30,4 +30,29 @@ public class ArrayOps{
     }
   return sumarr;
   }
+  public static int[] largestInRows(int[][] matrix){
+    int length = matrix.length;
+    int max = 0;
+    int[] maxarr = new int[length];
+    for(int i = 0;i < length;i++){
+      for(int j = 0;j < length;j++){
+        if(matrix[i][j] > max){
+          max = matrix[i][j];
+        }
+      }
+      maxarr[i] = max;
+      max = 0;
+    }
+    return maxarr;
+  }
+  public static int sum(int[][] matrix){
+    int length = matrix.length;
+    int sum = 0;
+    for(int i = 0;i < length;i++){
+      for(int j = 0;j <= length;j++){
+        sum += matrix[i][j];
+      }
+    }
+    return sum;
+  }
 }
