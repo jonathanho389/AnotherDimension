@@ -100,4 +100,21 @@ public class ArrayOps{
     }
     return nextEquals;
   }
+  public static boolean isLocationMagic(int[][] matrix, int row, int col){
+    int length = matrix.length;
+    int sumrow = 0;
+    int sumcol = 0;
+    for(int i = 0;i < matrix[row].length;i++){
+      sumrow += matrix[row][i];
+    }
+    for(int i = 0;i < matrix.length;i++){
+      sumcol += matrix[i][col];
+    }
+    if(sumrow == sumcol){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
 }

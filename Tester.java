@@ -17,6 +17,10 @@ public class Tester{
     int[][] newarr5 = { {  2,  2, 2 },
                         {  2, 2, 2 }
                       };
+    int[][] newarr6 = {
+                      {  2,  4, 2 },
+                      {  2, 2, 2 }
+                    };
     System.out.println(ArrayOps.sum(newarr));
     System.out.println(ArrayOps.largest(newarr));
     System.out.println(Arrays.toString(ArrayOps.sumRows(newarr2)));
@@ -27,5 +31,6 @@ public class Tester{
     System.out.println(ArrayOps.isColMagic(newarr4));
     System.out.println(ArrayOps.isRowMagic(newarr5));
     System.out.println(ArrayOps.isColMagic(newarr5));
+    System.out.println(ArrayOps.isLocationMagic(newarr6, 0, 1));
   }
 }
